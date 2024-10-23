@@ -1,29 +1,33 @@
-Image Inpainting: GAN vs. Diffusion Models
+# Image Inpainting: GAN vs. Diffusion Models
 
-Overview
+## Overview
 
 This project compares Generative Adversarial Networks (GAN) and Diffusion Models in the task of image inpainting, where missing portions of an image are reconstructed based on contextual information from the remaining parts. The project evaluates both approaches using Peak Signal-to-Noise Ratio (PSNR) and Structural Similarity Index (SSIM) to measure their effectiveness.
 
-Table of Contents
+## Authors
+- Ana Maria Jaramillo - [GitHub Profile](https://github.com/Anmjaramillo412)
+- Saghar Ghaffari - [GitHub Profile](https://github.com/Saghar1261)
+  
+## Table of Contents
 
-Project Structure
-Dataset
-Models
-GAN
-Diffusion Model
-Preprocessing
-Training and Evaluation
-Results
-Conclusions
-Future Work
-Project Structure
+- Project Structure
+- Dataset
+- Models
+- GAN
+- Diffusion Model
+- Preprocessing
+- Training and Evaluation
+- Results
+- Conclusions
+- Future Work
+- Project Structure
 
 
 |-- ANN_GROUP2_VAR_Final.ipynb     # Main notebook containing model implementation and training
 |-- ANN II - Project.pptx          # Project presentation with methodology and results
 |-- ANN_II_Jaramillo_Ghaffari.pdf  # Project report
 |-- data/                         # Contains training and test datasets
-    |-- Places365/                # "Places" dataset used for training
+|-- Places365/                # "Places" dataset used for training
 |-- models/                       # Pretrained models and checkpoints
 |-- results/                      # Results including images and performance metrics
 Dataset
@@ -32,16 +36,16 @@ The Places365 dataset was used in this project. It consists of 36,000 images of 
 
 More information about the dataset can be found here.
 
-Models
+## Models
 
-1. Generative Adversarial Networks (GAN)
+### 1. Generative Adversarial Networks (GAN)
 The GAN architecture includes:
 
 Generator: A fully connected neural network with 3 layers using the LeakyReLU activation and batch normalization.
 Discriminator: A 2-layer network using the Sigmoid activation for real/fake classification.
 The GAN was trained to generate realistic images from random noise and then restore damaged images. The optimizer used is Adam, and the loss function is Binary Cross-Entropy for discriminator and generator, and MSE for the repair task.
 
-2. Diffusion Model
+### 2. Diffusion Model
 The Diffusion Model adds Gaussian noise to the damaged images and gradually removes the noise to restore the image. A probabilistic approach using TensorFlow Probability was implemented. The model was trained using the Adam optimizer and MSE as the loss function.
 
 Preprocessing
