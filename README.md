@@ -23,14 +23,6 @@ This project compares Generative Adversarial Networks (GAN) and Diffusion Models
 - Project Structure
 
 
--- ANN_GROUP2_VAR_Final.ipynb     # Main notebook containing model implementation and training
--- ANN II - Project.pptx          # Project presentation with methodology and results
--- ANN_II_Jaramillo_Ghaffari.pdf  # Project report
--- data/                         # Contains training and test datasets
--- Places365/                # "Places" dataset used for training
--- models/                       # Pretrained models and checkpoints
--- results/                      # Results including images and performance metrics
-
 
 ## Dataset
 
