@@ -30,7 +30,9 @@ This project compares Generative Adversarial Networks (GAN) and Diffusion Models
 |-- Places365/                # "Places" dataset used for training
 |-- models/                       # Pretrained models and checkpoints
 |-- results/                      # Results including images and performance metrics
-Dataset
+
+
+## Dataset
 
 The Places365 dataset was used in this project. It consists of 36,000 images of various scenes, each resized to 128x128 pixels for computational efficiency. For image inpainting, parts of the images were randomly masked to simulate damage.
 
@@ -48,7 +50,7 @@ The GAN was trained to generate realistic images from random noise and then rest
 ### 2. Diffusion Model
 The Diffusion Model adds Gaussian noise to the damaged images and gradually removes the noise to restore the image. A probabilistic approach using TensorFlow Probability was implemented. The model was trained using the Adam optimizer and MSE as the loss function.
 
-Preprocessing
+### Preprocessing
 
 The dataset was preprocessed by resizing all images to 128x128 pixels and normalizing the pixel values. A custom function was used to randomly mask sections of each image to create the "damaged" dataset for training.
 
@@ -56,8 +58,8 @@ Training and Evaluation
 
 The training process was performed using TensorFlow, with a focus on comparing the performance of the two models:
 
-GAN: The generator and discriminator were trained for 1000 epochs.
-Diffusion Model: Trained for 999 epochs due to higher computational costs.
+### GAN: The generator and discriminator were trained for 1000 epochs.
+### Diffusion Model: Trained for 999 epochs due to higher computational costs.
 Metrics used:
 
 PSNR: Measures the quality of image restoration.
@@ -69,12 +71,12 @@ GAN	10.78	0.46
 Diffusion	17.39	0.82
 The results show that the Diffusion Model outperformed the GAN in both PSNR and SSIM, though at the cost of greater computational resources and longer training times.
 
-Conclusions
+## Conclusions
 
 The Diffusion Model demonstrated superior performance in terms of image quality, producing more accurate and structurally similar inpainted images compared to the GAN. However, GANs are more efficient in terms of time and computational power, making them a good choice for projects with limited resources.
 
-Future Work
+## Future Work
 
-Implementing a Residual Block Structure within the diffusion process to improve feature learning.
-Exploring advanced GAN architectures such as WGAN to improve image quality.
-Extending the project to other datasets and higher-resolution images.
+- Implementing a Residual Block Structure within the diffusion process to improve feature learning.
+- Exploring advanced GAN architectures such as WGAN to improve image quality.
+- Extending the project to other datasets and higher-resolution images.
