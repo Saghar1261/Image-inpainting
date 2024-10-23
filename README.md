@@ -72,3 +72,9 @@ The Diffusion Model demonstrated superior performance in terms of image quality,
 - Implementing a Residual Block Structure within the diffusion process to improve feature learning.
 - Exploring advanced GAN architectures such as WGAN to improve image quality.
 - Extending the project to other datasets and higher-resolution images.
+
+## Files and Notebooks
+You can find the detailed implementation in the Jupyter notebooks provided:
+- ([https://drive.google.com/drive/folders/1kR0PJfPquBPaEApK1q6Fo_OTftezu-gl])
+
+
