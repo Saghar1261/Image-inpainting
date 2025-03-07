@@ -5,8 +5,8 @@
 This project compares Generative Adversarial Networks (GAN) and Diffusion Models in the task of image inpainting, where missing portions of an image are reconstructed based on contextual information from the remaining parts. The project evaluates both approaches using Peak Signal-to-Noise Ratio (PSNR) and Structural Similarity Index (SSIM) to measure their effectiveness.
 
 ## Authors
-- Ana Maria Jaramillo - [GitHub Profile](https://github.com/Anmjaramillo412)
-- Saghar Ghaffari - [GitHub Profile](https://github.com/Saghar1261)
+- Ana Maria Jaramillo MSc - [GitHub Profile](https://github.com/Anmjaramillo412)
+- Saghar Ghaffari MSc - [GitHub Profile](https://github.com/Saghar1261)
   
 ## Table of Contents
 
